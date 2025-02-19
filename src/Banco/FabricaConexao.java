@@ -10,14 +10,14 @@ public class FabricaConexao {
 			
 			String stringConexao = "jdbc:mysql://localhost/theMentes?useTimezone=true&serverTimezone=UTC";
 			String usuario = "root";
-			String senha = "Naoya81194*";
+			String senha = "IFRNjc.2022";
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			Connection conexao = DriverManager.getConnection(stringConexao, usuario, senha);
 			
 			return conexao;
-			  
+			  //teste de commit//
 			}
 
 	}
