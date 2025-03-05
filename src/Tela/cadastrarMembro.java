@@ -338,7 +338,7 @@ public class cadastrarMembro extends JFrame {
 	
 	protected void iniciarEdicaoMembro() {
 		if (listarMembro.getSelectedIndex() == -1) {
-			exibirMensagemErro("Selecione um aluno");
+			exibirMensagemErro("Selecione um membro");
 		}
 
 		membroEdicao = (Membro) listarMembro.getSelectedValue();
@@ -392,7 +392,7 @@ public class cadastrarMembro extends JFrame {
 	
 	protected void removerDados() throws ClassNotFoundException, SQLException {
 		if (listarMembro.getSelectedIndex() == -1) {
-			exibirMensagemErro("Selecione um aluno");
+			exibirMensagemErro("Selecione um membro");
 		}
 		
 		String senha = "AiPapai";

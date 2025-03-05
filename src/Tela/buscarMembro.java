@@ -132,6 +132,7 @@ public class buscarMembro extends JFrame {
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(128, 0, 128));
 		panel_1.setLayout(null);
+		panel_1.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "Listagem de Membros", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
 		panel_1.setBounds(233, 11, 593, 339);
 		contentPane.add(panel_1);
 		
