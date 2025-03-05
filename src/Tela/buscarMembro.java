@@ -132,7 +132,6 @@ public class buscarMembro extends JFrame {
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(128, 0, 128));
 		panel_1.setLayout(null);
-		panel_1.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "Listagem de Alunos", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
 		panel_1.setBounds(233, 11, 593, 339);
 		contentPane.add(panel_1);
 		
@@ -145,7 +144,7 @@ public class buscarMembro extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"Nome:", "Nome de Gang:", "Idade:", "CPf:"
+				"Nome:", "Nome de Gang:", "Idade:", "CPF:"
 			}
 		));
 		tableMembro.getColumnModel().getColumn(0).setPreferredWidth(95);
@@ -165,7 +164,7 @@ public class buscarMembro extends JFrame {
 		membrosEncontrados = dao.buscarMembro(textFieldNome.getText(), textFieldNomeGang.getText(),
 				textFieldCpf.getText(), textFieldIdade.getText());
 
-		DefaultTableModel modelo = new DefaultTableModel(new String[] { "Nome:", "Nome de Gang:", "Idade:", "CPf:"}, 0);
+		DefaultTableModel modelo = new DefaultTableModel(new String[] { "Nome:", "Nome de Gang:", "Idade:", "CPF:"}, 0);
 
 		for (int i = 0; i < membrosEncontrados.size(); i++) {
 			Membro membro = membrosEncontrados.get(i);
